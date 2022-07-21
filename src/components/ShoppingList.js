@@ -10,8 +10,7 @@ function ShoppingList() {
   useEffect(() => {
       fetch("http://localhost:4000/items")
         .then((res) => res.json())
-        
-      .then((items) => setItems(items));
+        .then((items) => setItems(items));
   }, []);
 
   const handleDeleteItem = (deletedItem) => {
